@@ -14,12 +14,12 @@ const CriteriaSchema = SchemaFactory.createForClass(Criteria);
 
 @Schema()
 class Issuer {
-  @Prop({ required: true })
-  name: string;
-  @Prop({ required: true })
-  url: string;
-  @Prop({ required: true })
-  email: string;
+  // @Prop({ required: true })
+  // name: string;
+  // @Prop({ required: true })
+  // url: string;
+  // @Prop({ required: true })
+  // email: string;
   @Prop({ required: true })
   organizationId: MongooseSchema.Types.ObjectId;
 }

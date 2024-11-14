@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import databaseConfig from './config/database.config';
 import { BadgesModule } from './features/badges/badges.module';
+import { OrganizationsModule } from './features/organizations/organizations.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { BadgesModule } from './features/badges/badges.module';
       inject: [ConfigService],
     }),
     BadgesModule,
+    OrganizationsModule,
   ],
 })
 export class AppModule {}

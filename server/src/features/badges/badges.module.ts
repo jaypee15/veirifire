@@ -5,7 +5,9 @@ import { BadgesService } from './badges.service';
 import { Badge, BadgeSchema } from './schemas/badge.schema';
 
 @Module({
-  imports: [MongooseModule.forFeature([{ name: Badge.name, schema: BadgeSchema }])],
+  imports: [
+    MongooseModule.forFeature([{ name: Badge.name, schema: BadgeSchema }]),
+  ],
   controllers: [BadgesController],
   providers: [BadgesService],
   exports: [BadgesService],
